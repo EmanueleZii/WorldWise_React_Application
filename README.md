@@ -1,0 +1,1 @@
+<h1>World wise react application with vite</h1>
