@@ -11,10 +11,15 @@ import Login from "./pages/Login";
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route index element={<Homepage />} />
           <Route path="product" element={<Product />} />
           <Route path="pricing" element={<Pricing />} />
-          <Route path="app" element={<AppLayout />} />
+          <Route path="app" element={<AppLayout />} >
+            <Route index  element={<p>List Of City</p>} />
+            <Route path="cities" element={<div>List Of Cities</div>} />
+            <Route path="countries" element={<div>List Of Countries</div>} />
+            <Route path="form" element={<div>Form</div>} />
+          </Route>
           <Route path="login" element={<Login />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
