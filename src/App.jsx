@@ -11,7 +11,7 @@ import CityList from "./components/CityList";
 import City from "./components/City";
 import Form from "./components/Form";
 import CountryList from "./components/CountryList";
-
+import { Navigate } from "react-router-dom";
 
   const BASE_URL = `http://localhost:9000`;
 
@@ -46,7 +46,7 @@ import CountryList from "./components/CountryList";
           <Route path="app" element={<AppLayout />} >
             <Route 
               index 
-              element={<CityList cities={cities} isLoading={isLoading} />} 
+              element={<Navigate replace to={cities} />} 
             />
             <Route 
               path="cities"

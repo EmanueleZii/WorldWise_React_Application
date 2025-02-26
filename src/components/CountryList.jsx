@@ -23,7 +23,6 @@ import CountryItem from './CountryItem';
         {countries.map((country) => (
              <CountryItem country={country} key={country.country} />
          ))};
-
     </ul>
   );
 
