@@ -1,5 +1,6 @@
 /* eslint-disable */
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Product from "./pages/Product";
 import Homepage from "./pages/homepage";
 import Pricing from "./pages/Pricing";
@@ -8,7 +9,7 @@ import AppLayout from "./pages/AppLayout";
 import Login from "./pages/Login";
 import CityList from "./components/CityList";
 import City from "./components/City";
-import { useEffect, useState } from "react";
+import Form from "./components/Form";
 import CountryList from "./components/CountryList";
 
 
@@ -53,7 +54,7 @@ import CountryList from "./components/CountryList";
             />
             <Route path='cities/:id' element={<City />} />
             <Route path="countries" element={<CountryList cities={cities} isLoading={isLoading} />} />
-            <Route path="form" element={<div>Form</div>} />
+            <Route path="form" element={<Form />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>
