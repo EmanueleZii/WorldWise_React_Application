@@ -17,7 +17,6 @@ import { CitiesProvider } from "./contexts/CitiesContext";
 
   return (
     <CitiesProvider > 
-      
         <BrowserRouter>
           <Routes>
             <Route index element={<Homepage />} />
