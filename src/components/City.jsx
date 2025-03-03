@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useCities } from "../contexts/CitiesContext";
 import { useParams } from 'react-router-dom';
 import Spinner from './Spinner';
-import BackButtons from './BackButtons';
+import BackButtons from './BackButton';
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("it", {
@@ -59,7 +59,7 @@ function City() {
       </div>
 
       <div>
-        <BackButtons />
+        <BackButton />
       </div>
     </div>
   );
