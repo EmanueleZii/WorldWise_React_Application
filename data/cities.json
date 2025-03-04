@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": "73930385"
-    },
-    {
       "cityName": "Madrid",
       "country": "Spain",
       "emoji": "🇪🇸",
@@ -35,6 +23,18 @@
         "lng": 13.376933665713324
       },
       "id": "98443197"
+    },
+    {
+      "id": "4b79",
+      "cityName": "Sotouboua",
+      "country": "Togo",
+      "emoji": "🇹🇬",
+      "date": "2025-03-04T10:38:54.097Z",
+      "notes": "bho",
+      "position": {
+        "lat": "8.581021215641854",
+        "lng": "0.9667968750000001"
+      }
     }
   ]
 }
