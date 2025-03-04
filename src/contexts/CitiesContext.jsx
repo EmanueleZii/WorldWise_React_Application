@@ -68,12 +68,31 @@ function CitiesProvider({ children }) {
     }
   }
 
+  async function deleteCity(id){
+    try {
+      const res = await fetch(`${BASE_URL}/cities/${id}`, {
+        method: 'DELETE',
+      });
+  
+      setCities((cities) => cities.filter((city) => city.id !== id));
+  
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+  
+
   return (
-    <CitiesContext.Provider value={{ cities, isLoading, currentCity, getCity, createCity, error, fetchCities }}>
+    <CitiesContext.Provider value={{ cities, isLoading, currentCity, getCity, createCity, deleteCity, error, fetchCities }}>
       {children}
     </CitiesContext.Provider>
   );
 }
+
+
+
 
 CitiesProvider.propTypes = {
   children: PropTypes.node.isRequired,
